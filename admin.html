@@ -24,8 +24,8 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-		    <a class="blog-nav-item active" href="index.html">Home</a>
-		    <a class="blog-nav-item" href="admin.html">Admin</a>
+		    <a class="blog-nav-item" href="index.html">Home</a>
+		    <a class="blog-nav-item active" href="admin.html">Admin</a>
 		</nav>
       </div>
     </div>
@@ -40,7 +40,8 @@
       <div class="row">
 
         <div class="col-sm-8 blog-main">
-		    <div class="main-container"></div>
+		    <div class="main-container"> 
+        </div>
 		</div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -85,15 +86,18 @@
         <a href="#">Back to top</a>
       </p>
     </footer>
-    <script id="blogs-tpl" type="text/x-handlebars-template">
-	    {{#each blog}}
-	    <div class="blog-post">
-	        <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
-	        <p class="blog-post-meta">At time by an author</p>
-	        <div>{{{content}}}</div>
-	    </div>
-	    {{/each}}
-	</script>
+    <script id="login-tpl" type="text/x-handlebars-template">
+        <form class="form-signin" role="form">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <input type="text" name="username" class="form-control" placeholder="Username" required="" autofocus="" autocomplete="off">
+            <input type="password" name="password" class="form-control" placeholder="Password" required="" autocomplete="off">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+    </script>
+ 
+<script id="welcome-tpl" type="text/x-handlebars-template">
+    <h2>Welcome, {{username}}!</h2>
+</script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -101,6 +105,6 @@
     <!-- Handlebars.js -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="js/admin.js"></script>
   </body>
 </html>
