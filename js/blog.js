@@ -7,7 +7,7 @@ $(function() {
     var TestObject = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
     testObject.save({foo: "bar"}).then(function(object) {
-      alert("yay! it worked");
+      console.log("it worked");
     });
 
     var Blog = Parse.Object.extend("Blog");
